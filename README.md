@@ -49,7 +49,7 @@ To run it on flink:
 - Select the path/to/your/clone_dir/target/wiki-edits-0.1.jar
 - Click upload
 - Checkbox the newly submitted job 
-- In the class inputbox type {wikiedits.WikipediaAnalysis}
+- In the class inputbox type ```wikiedits.WikipediaAnalysis```
 
 You can now analyse the Job in the web portal and can check consumer terminal of kafka to see the results.
 
