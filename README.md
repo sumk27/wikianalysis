@@ -42,14 +42,22 @@ $   mvn exec:java -Dexec.mainClass=wikiedits.WikipediaAnalysis
 
 The Second command will run the jar file and you start getting some result in consumer terminal of kafka but it wont register into flink web portal.
 
-To run it on flink:
+To run it on flink using terminal:
+
+```sh
+$ ./bin/flink run -c wikiedits.WikipediaAnalysis path/to/your/clone_dir/target/wiki-edits-0.1.jar
+```
+
+To run it on flink using web portal:
+
 - Go to your favorite browser and enter this url http://localhost:8081 
 - Go to Submit New Job Tab. 
 - Click on add new job.
 - Select the path/to/your/clone_dir/target/wiki-edits-0.1.jar
 - Click upload
 - Checkbox the newly submitted job 
-- In the class inputbox type ```wikiedits.WikipediaAnalysis```
+- (optional) In the class inputbox type ```wikiedits.WikipediaAnalysis```
+- Click Submit
 
 You can now analyse the Job in the web portal and can check consumer terminal of kafka to see the results.
 
